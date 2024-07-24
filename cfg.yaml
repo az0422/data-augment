@@ -1,0 +1,50 @@
+mode: segment
+
+# segment mode
+# file structure
+#
+# image_path/
+# +- image1.png
+# +- image2.png
+# +...
+#
+# label_path/
+# +- image1.png
+# +- image2.png
+# ...
+#
+# classify mode
+# file structure
+#
+# image_path/
+# + class_a/
+# | - image1.png
+# | - image2.png
+# | ...
+# + class_b/
+# | - image3.png
+# | - image4.png
+# | ...
+# ...
+
+
+image_path: path/to/images
+label_path: path/to/labels # only for segment mode
+image_export: export/to/path/to/images
+label_export: export/to/path/to/labels # only for segment mode
+
+batch_size: 32 # augment images at one time
+epochs: 1024 # repeat count
+resize: 640 # resize to NxN
+
+flip_vertical: 0.5 # probability (0 - 1)
+flip_horizontal: 0.5 # probability(0 - 1)
+rotate_degree: 0 # degree (0 - 180)
+rotate_prob: 0.5 # probability (0 - 1)
+brightness_range_add: [1, 1] # brightness * mul * ratio + add, (0 - 2)
+brightness_range_mul: [1, 1] # brightness * mul * ratio + add, (0 - 2)
+brightness_range_ratio: [1, 1] # brightness * mul * ratio + add, (0 - 2)
+noise_opacity_range: [0, 0] # noise opacity (0 - 1)
+translate_vertical_range: [0, 0] # (x, y + translate) (-1 - 1)
+translate_horizontal_range: [0, 0] # (x + translate, y) (-1 - 1)
+rescale_ratio_range: [1, 1] # (width * resize, height * resize) (0 - 1)
