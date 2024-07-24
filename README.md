@@ -1,10 +1,10 @@
 # Data Augmentation Library for Python
 
 ## Modules
- * modules.classify.Augmentation
+ * `modules.classify.Augmentation`
  Augmenting data for classify
 
- * modules.segment.Augmentation
+ * `modules.segment.Augmentation`
  Augmenting data for segmentation
 
 ## How to use
