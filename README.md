@@ -38,4 +38,4 @@
  * `rescale_ratio_range: [1, 1] # (width * resize, height * resize) (0 - 1)`
 
 ## TODO list
- * Implement augmentation tool
+ * Implement for examples
